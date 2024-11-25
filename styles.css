@@ -1,17 +1,30 @@
 /* styles.css */
+
+/* Color Variables */
+: root {
+    --primary-accent: #DEAA79; /* Warm Sand */
+    --secondary-accent: #FFE6A9; /* Soft Cream */
+    --complementary-accent: #B1C29E; /* Muted Sage */
+    --primary-dark: #59287; /* Deep Indigo */
+    --text-color: #333; /* Neutral text color for readability */
+    --background-color: #FFE6A9; /* Soft Cream for the background */
+}
+
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 
+/* Header */
 header {
-    background-color: #004d66;
+    background-color: var(--primary-dark); /* Deep Indigo for contrast */
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
     border-radius: 0 0 15px 15px;
 }
 
@@ -19,10 +32,7 @@ header h1 {
     margin: 0;
 }
 
-nav {
-    margin-top: 10px;
-}
-
+/* Navigation Links */
 nav a {
     color: white;
     text-decoration: none;
@@ -31,19 +41,21 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: var(--secondary-accent); /* Highlight links on hover */
 }
 
+/* Section Styles */
 section {
-    padding: 40px 20px;
     margin: 20px;
-    background-color: #fff;
+    padding: 20px;
+    background-color: white;
     border-radius: 15px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Hero Section */
 .hero {
-    background: url('hero-image.jpg') no-repeat center center / cover;
+    background: var(--primary-accent); /* Warm Sand for vibrancy */
     color: white;
     text-align: center;
     padding: 80px 20px;
@@ -60,24 +72,31 @@ section {
     margin: 10px 0;
 }
 
+/* Buttons */
 button, a.cta-button {
-    display: inline-block;
-    background: #ff6f61;
+    background: var(--primary-accent); /* Warm Sand for primary buttons */
     color: white;
-    text-decoration: none;
+    border: none;
     padding: 10px 20px;
     border-radius: 15px;
-    margin: 20px 10px;
     font-size: 1em;
     transition: background-color 0.3s ease;
 }
 
 button:hover, a.cta-button:hover {
-    background-color: #e55d50;
+    background-color: var(--complementary-accent); /* Muted Sage on hover */
 }
 
+/* Gallery Images */
+.gallery img {
+    width: 100%;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+/* Footer */
 footer {
-    background-color: #002933;
+    background-color: var(--primary-dark); /* Deep Indigo for footer */
     color: white;
     text-align: center;
     padding: 20px;
@@ -88,8 +107,16 @@ footer p {
     margin: 5px 0;
 }
 
-.gallery img {
-    width: 100%;
-    border-radius: 15px;
-    margin: 10px 0;
+/* Additional Styling */
+blockquote {
+    background-color: var(--secondary-accent); /* Soft Cream for highlights */
+    padding: 20px;
+    border-left: 5px solid var(--primary-accent); /* Warm Sand for accent */
+    font-style: italic;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+h2, h3 {
+    color: var(--primary-dark); /* Deep Indigo for headings */
 }
