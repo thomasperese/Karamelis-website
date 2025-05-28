@@ -1,34 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empowering Community | Tau Tua</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Co-op Property Management Portal</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+    .portals {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .portal {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 2rem;
+      text-align: center;
+      width: 280px;
+      transition: transform 0.2s;
+    }
+    .portal:hover {
+      transform: translateY(-5px);
+    }
+    .portal h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .portal a {
+      display: inline-block;
+      margin-top: 1rem;
+      text-decoration: none;
+      color: white;
+      background-color: #0077cc;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+    .portal a:hover {
+      background-color: #005fa3;
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #999;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Co-op Property Management</h1>
+    <p>Welcome to your building management portal</p>
+  </header>
 
-<header>
-    <h1>Tau Tua: Empowering Community</h1>
-    <nav>
-        <a href="about.html">About</a>
-        <a href="lgbt.html">LGBT Community</a>
-        <a href="polynesian.html">Polynesian Community</a>
-        <a href="personal-development.html">Personal Development</a>
-        <a href="personal-trainer.html">Personal Trainer</a>
-    </nav>
-</header>
+  <section class="portals">
+    <div class="portal">
+      <h2>Custodian Portal</h2>
+      <p>Access task tracking, job assignments, and compliance data.</p>
+      <a href="https://airtable.com/appvrCESB8MaXHNT6/pag7MmwFIxVBq4SGl?BlTNI=b%3AeyJLTkZNWCI6W1sxLCJzZWxHb2F0WTFqNnNIS2VZUSJdXX0&1KUtQ=b%3AeyJHMmVoYSI6W1syLHsibW9kZSI6ImRheXNGcm9tTm93IiwibnVtYmVyT2ZEYXlzIjozMCwidGltZVpvbmUiOiJQYWNpZmljL0F1Y2tsYW5kIiwic2hvdWxkVXNlQ29ycmVjdFRpbWVab25lRm9yRm9ybXVsYWljQ29sdW1uIjp0cnVlfV1dfQ&iMu3b=b%3AeyJnY05EeCI6W1swLHRydWVdXX0&MmS8T=recHe6h3FNvV8Msl2&GU5SC=recOiXz9nAojkfqVE&TA3KA=recnPxTmuXeoZJVOi" target="_blank">Enter Portal</a>
+    </div>
+    <div class="portal">
+      <h2>Client-Facing Portal</h2>
+      <p>Chat with CoBot for status updates, document requests, and more.</p>
+      <a href="https://www.chatbase.co/your-bot-link" target="_blank">Launch Chat</a>
+    </div>
+  </section>
 
-<section class="hero">
-    <h2>Empowering Community, Wellness, and Connection</h2>
-    <p>Where modern wellness meets cultural roots to help you thrive.</p>
-    <a href="about.html" class="cta-button">Learn More</a>
-    <a href="contact.html" class="cta-button">Join Now</a>
-</section>
+  <footer>
+    &copy; 2025 Co-op Property Management. All rights reserved.
+  </footer>
 
-<footer>
-    <p>&copy; 2024 Tau Tua. All Rights Reserved.</p>
-</footer>
-
+    <script>
+    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="EPsGbPuLX3mP_KGBpy97g";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
 </body>
 </html>
